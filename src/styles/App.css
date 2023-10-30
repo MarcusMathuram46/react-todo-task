@@ -1,0 +1,133 @@
+/* styles.css */
+
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+/* Form and input elements */
+.todo-form {
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-row label {
+  width: 45%;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.input-row input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Button and select */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.select-filter {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Todo Cards */
+.todo-card {
+  background-color: #97e7a5;
+  border: 1px solid #fffefe;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-card h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #333232;
+}
+
+.todo-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-row label,
+  .input-row input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* Define responsive styles for the filter select element */
+.filter-select {
+  width: 100%;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .filter-select {
+    width: 80%;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+  .filter-select {
+    width: 40%;
+  }
+}
+
